@@ -1,19 +1,34 @@
-package com.Control_Statements_If;
+package Control_Statements_IF_else;
 
-// Control Statements / Decision Making statements:
+import java.util.Scanner;
+
 public class Demo {
-	// If i want to control the program execution flow then we vcan go for control
-	// statements
-	// 1- If Statement
-	// Syntax: if(condition){ // code}
-	public static void main(String[] args) {
-
-		if (true) {
-            System.out.println("Hello");
-            System.out.println("Python World...");
-        }
-
-        System.out.println("Welcome");
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter Your Name:");
+	String name= sc.next();
+	if(name.length()<3) {
+		System.err.println("You need atleast above 3 character letter");
+		}
+	else {
+		System.out.println("Your  Name is:"+name);
 	}
-
+	System.out.println("Enter Your Password :");
+	String password=sc.next();
+	if(password.length()<3) {
+		System.err.println("You need atleast 3 char length of password...");	
+	}
+	else {
+		System.out.println("Your Password is:"+password);
+	}
+	if(name.equals("Ram")&& password.equals("1212")) {
+		System.out.println("Login Sucess..");
+		
+	}
+	else {
+		System.out.println("Login False..");
+	}
+	
+	
+}
 }

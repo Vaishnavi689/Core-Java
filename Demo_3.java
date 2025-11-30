@@ -1,22 +1,18 @@
-package com.Control_Statements_If;
+package Control_Statements_IF_else;
 
 import java.util.Scanner;
 
 public class Demo_3 {
 	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter Your name:");
-		String name=sc.next();
-		if(name.length()<3) {
-			System.err.println("Name should be atleast greater than 3 Character.."); // err used to get output in red colour
-		}
-		System.out.println("Your Name is :"+name);
-		System.out.println("Enter your Password:");
-		String password=sc.next();
-		if(password.length()<3) {
-			System.err.println("Password should be atleast 3 number..");
-		}
-		System.out.println("Your password is:"+password);
-			}
+		//int n = 10;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a Number :");
+		int n= sc.nextInt();
+        if (n > 5) {
+            System.out.println("The number is greater than 5.");
+        } else {
+            System.out.println("The number is 5 or less.");
+        }
+	}
 
 }
