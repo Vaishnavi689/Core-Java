@@ -1,34 +1,26 @@
-package Control_Statements_IF_else;
+package Control_statement_Nested_If;
 
 import java.util.Scanner;
 
 public class Demo {
-public static void main(String[] args) {
-	Scanner sc=new Scanner(System.in);
-	System.out.println("Enter Your Name:");
-	String name= sc.next();
-	if(name.length()<3) {
-		System.err.println("You need atleast above 3 character letter");
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Your Marks: ");
+		int marks = sc.nextInt();
+		if (marks >= 35) // outer IF
+		{
+			if (marks >= 75) {
+				System.out.println("Distinction");
+
+			} else if (marks < 75 && marks >= 60) {
+
+				System.out.println("First Class");
+			} else {
+				System.out.println("Pass");
+			}
+		} else {
+			System.out.println("Fail");
 		}
-	else {
-		System.out.println("Your  Name is:"+name);
 	}
-	System.out.println("Enter Your Password :");
-	String password=sc.next();
-	if(password.length()<3) {
-		System.err.println("You need atleast 3 char length of password...");	
-	}
-	else {
-		System.out.println("Your Password is:"+password);
-	}
-	if(name.equals("Ram")&& password.equals("1212")) {
-		System.out.println("Login Sucess..");
-		
-	}
-	else {
-		System.out.println("Login False..");
-	}
-	
-	
-}
+
 }
